@@ -1,7 +1,8 @@
 import fs from 'fs';
 import axios from 'axios';
 
-const path = '../../assets';
+// TODO : change path where you want
+const path = './assets';
 
 export async function imageDownload(_url, imageName) {
     const res = await axios.get(_url, {

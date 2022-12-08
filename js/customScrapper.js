@@ -3,6 +3,7 @@ import { Scrapper } from './util/scrapper.js'
 export async function customScrapper(url) {
     const $ = await Scrapper(url);
 
+    // TODO : change html parsing logic
     let result = [];
 
     let productList = $('div.products')
@@ -28,6 +29,7 @@ export async function customScrapper(url) {
         });
     });
     console.log(result);
+    // TODO : change html parsing logic
 
     return result;
 }
